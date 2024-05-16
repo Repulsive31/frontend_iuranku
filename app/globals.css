@@ -7,3 +7,32 @@
     text-wrap: balance;
   }
 }
+
+.triangle {
+  position: relative;
+}
+
+.triangle::before,
+.triangle::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.triangle::before {
+  top: 0;
+  left: 0;
+  border-width: 0 100px 100px 0; /* Adjust the size as needed */
+  border-color: transparent #ff0000 transparent transparent; /* Adjust the color as needed */
+}
+
+.triangle::after {
+  top: 0;
+  right: 0;
+  border-width: 0 0 100px 100px; /* Adjust the size as needed */
+  border-color: transparent transparent #ff0000 transparent; /* Adjust the color as needed */
+}
+
+/* #cbd5e1 */

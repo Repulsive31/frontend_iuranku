@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import AboutIuranKu from "@/components/AboutIuranKu";
+import HowIuranKu from "@/components/HowIuranKu";
+import FaQIuranKU from "@/components/FaQIuranKU";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,9 +25,14 @@ export default function RootLayout({
         <NavBar/>
           <main className="relative overflow-hidden">
             {children}
+            <div className="bg-slate-300 triangle">
+              <AboutIuranKu/>
+              <HowIuranKu/>
+              <FaQIuranKU/>
+            </div>
           </main>
         <Footer/>
-        </body>
+      </body>
     </html>
   );
 }
