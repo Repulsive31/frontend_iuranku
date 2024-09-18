@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 import AboutIuranKu from "@/components/AboutIuranKu";
 import HowIuranKu from "@/components/HowIuranKu";
 import FaQIuranKU from "@/components/FaQIuranKU";
+import RegisterPage from "./RegisterPage";
+import Main from "./Main";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,11 +27,13 @@ export default function RootLayout({
       <body className="bg-green-950 bg-opacity-85 px-16">
         <NavBar/>
           <main className="relative overflow-hidden">
-            {children}
-            <div className="bg-slate-300 triangle">
-              <AboutIuranKu/>
+            {/* {children} */}
+            <div className="bg-slate-300">
+              <Main/>
+              {/* <RegisterPage/> */}
+              {/* <AboutIuranKu/>
               <HowIuranKu/>
-              <FaQIuranKU/>
+              <FaQIuranKU/> */}
             </div>
           </main>
         <Footer/>
