@@ -30,10 +30,10 @@ export default function RootLayout({
             {/* {children} */}
             <div className="bg-slate-300">
               <Main/>
-              {/* <RegisterPage/> */}
-              {/* <AboutIuranKu/>
+              <RegisterPage/>
+              <AboutIuranKu/>
               <HowIuranKu/>
-              <FaQIuranKU/> */}
+              <FaQIuranKU/> 
             </div>
           </main>
         <Footer/>
